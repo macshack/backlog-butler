@@ -31,6 +31,7 @@ The butler needs to know what really counts as a bug and what is worth building.
 - Out of scope: new dependencies, redesigns, style preferences.
 - Needs user: API changes, deleting data, anything costing money.
 - Verify with usual tools and tests. If they fail, revert and mark `blocked:<reason>`.
+- `SHOULD` use the backlog-butler SKILL if possible to handle adding issues to the backlog and culling them.
 ```
 
 Without this file the butler still logs (flagged `scope:unchecked`) but refuses to cull.
